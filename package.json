@@ -1,0 +1,28 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "npx nodemon src/server.ts",
+  "build": "npm run build:frontend && npm run build:backend",
+  "build:frontend": "cd ./src/front-end && npm run build",
+  "build:backend": "tsc",
+  "start": "node src/server.ts",
+  "gcp-build": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase-admin": "^13.5.0",
+    "mongodb": "^6.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2"
+  }
+}
