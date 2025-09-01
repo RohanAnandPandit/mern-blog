@@ -125,6 +125,8 @@ The backend will run on [http://localhost:8000](http://localhost:8000).
 	```
 
 - Ensure that the service account for your app has the `Storage Object Admin` role.
+- Ensure that there is a billing account associated with your project.
+
 ---
 
 ## 8. Useful Commands
