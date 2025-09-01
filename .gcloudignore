@@ -16,6 +16,7 @@
 # Node.js dependencies:
 node_modules/
 
+src/dist/
 src/front-end/node_modules
 src/front-end/dist
 
