@@ -1,16 +1,16 @@
 {
-  "name": "back-end",
+  "name": "mern-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "npx nodemon src/server.ts",
+  "dev": "npx nodemon src/backend/server.ts",
   "build": "npm run build:frontend && npm run build:backend",
-  "build:frontend": "cd ./src/front-end && npm install && npm run build",
-  "build:backend": "tsc",
-  "start": "node src/server.ts",
+  "build:frontend": "cd src/front-end && npm install && npm run build",
+  "build:backend": "cd src/backend && tsc",
+  "start": "node src/dist/server.js",
   "gcp-build": "npm run build"
   },
   "keywords": [],

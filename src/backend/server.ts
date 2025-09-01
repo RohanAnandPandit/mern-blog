@@ -1,4 +1,3 @@
-
 // Import required modules
 import express from 'express';
 import { MongoClient, ServerApiVersion } from 'mongodb';
@@ -52,12 +51,12 @@ async function connectToDB() {
 
 
 // Serve static files from frontend build
-app.use(express.static(path.join(__dirname, 'front-end', 'dist')));
+app.use(express.static(path.join(__dirname, '..', 'front-end', 'dist')));
 
 
 // Serve index.html for all non-API routes (SPA support)
 app.get(/^(?!\/api).+/, (req, res) => {
-    res.sendFile(path.join(__dirname, 'front-end', 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'front-end', 'dist', 'index.html'));
 });
 
 

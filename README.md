@@ -124,6 +124,7 @@ The backend will run on [http://localhost:8000](http://localhost:8000).
 	gcloud app browse
 	```
 
+- Ensure that the service account for your app has the `Storage Object Admin` role.
 ---
 
 ## 8. Useful Commands

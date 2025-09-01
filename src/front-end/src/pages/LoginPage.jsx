@@ -34,7 +34,9 @@ export default function LoginPage() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={logIn}>Log In</button>
-      <Link to="/create-account">Don&apos;t have an account? Create one here</Link>
+      <Link to="/create-account">
+        Don&apos;t have an account? Create one here
+      </Link>
     </div>
   );
 }
